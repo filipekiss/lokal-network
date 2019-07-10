@@ -1,0 +1,13 @@
+@tailwind base;
+
+@tailwind components;
+
+code {
+    @apply bg-purple-900 text-pink-400 p-1;
+}
+
+a {
+    @apply text-indigo-500;
+}
+
+@tailwind utilities;

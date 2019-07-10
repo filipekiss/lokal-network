@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html
+    lang="en"
+    class="text-gray-900 antialiased leading-tight font-normal font-sans"
+>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Lokal Network</title>
+        <link
+            href="https://fonts.googleapis.com/css?family=Quicksand&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body class="min-h-screen bg-gray-100">
+        <div
+            class="p-6 bg-indigo-600 h-64 flex flex-col
+            justify-center text-gray-200"
+        >
+            <h1 class="text-4xl text-center">Lokal Network</h1>
+            <h2 class="text-xl text-center">
+                Zero config localhost domains
+            </h2>
+        </div>
+        <div class="container mx-auto max-w-6xl p-8">
+            <h1 class="text-3xl">What is Lokal Network?</h1>
+            <p class="leading-loose">
+                Lokal Network is a free, simple to use, zero configuration
+                localhost domain provider. It allows you to use named domains
+                for development projects runnings on local networks, so you can
+                test things like CORS policies, OAuth integrations and other
+                things that might require you use a proper domain name instead
+                of
+                <code>localhost</code>.
+            </p>
+        </div>
+        <div class="container mx-auto max-w-6xl p-8">
+            <h1 class="text-3xl">How do I use it?</h1>
+            <p class="leading-loose">
+                First, ensure you have a service running on your machine (for
+                example, NGINX or some Express.js application). Let's say you
+                use
+                <code>localhost:3000</code>
+                to access this server. Just point your browser to
+                <code>anything.lokal.network:3000</code>
+                and you're done. That's really it.
+            </p>
+            <div
+                class="my-6 bg-indigo-400 p-10 italic rounded-lg shadow-lg text-gray-100"
+            >
+                Pro-tip:
+                <code>anything</code>
+                actually means <strong>anything</strong>. You can point your
+                browser to
+                <code>my-awesome-server.lokal.network</code>
+                and the result will be the same.
+            </div>
+        </div>
+        <div class="container mx-auto max-w-6xl p-8">
+            <h1 class="text-3xl">But why? (and how)</h1>
+            <p class="leading-loose">
+                I actually made this to show a few friends how
+                <strong>A</strong> records work when it comes to DNS. Except for
+                the apex domain, that is,
+                <a href="http://lokal.network">lokal.network</a>, the only DNS
+                record is a wildcard that matches <strong>any</strong> subdomain
+                and serves things from <code>127.0.0.1</code>.
+            </p>
+        </div>
+        <div class="container mx-auto max-w-6xl p-8">
+            <h1 class="text-3xl">Is it safe?</h1>
+            <p class="leading-loose">
+                Yes, absolutely. There are no servers for Lokal Network. This
+                page is hosted on Github Pages and is pure HTML and CSS. And
+                when you access a subdomain that shows you your local server,
+                Lokal Network only tells you browser (or Postman or whatever it
+                is that's requesting something) to look to your local server. We
+                collect no data, intercept no traffic and log nothing.
+            </p>
+        </div>
+        <div class="p-4 bg-indigo-700 text-gray-100">
+            <p class="text-center">
+                Made by
+                <a
+                    class="text-gray-100 underline"
+                    href="https://github.com/filipekiss"
+                    >Filipe Kiss</a
+                >. Hosted on
+                <a class="text-gray-100 underline" href="https://github.com"
+                    >Github Pages</a
+                >
+            </p>
+        </div>
+    </body>
+</html>

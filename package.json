@@ -1,0 +1,26 @@
+{
+    "name": "lokal-network",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.html",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build:css": "tailwind build styles/app.css -o styles.css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/filipekiss/lokal-network.git"
+    },
+    "author": "Filipe Kiss",
+    "license": "UNLICENSED",
+    "bugs": {
+        "url": "https://github.com/filipekiss/lokal-network/issues"
+    },
+    "homepage": "https://github.com/filipekiss/lokal-network#readme",
+    "dependencies": {
+        "tailwindcss": "^1.0.4"
+    },
+    "devDependencies": {
+        "tailwind": "^4.0.0"
+    }
+}
